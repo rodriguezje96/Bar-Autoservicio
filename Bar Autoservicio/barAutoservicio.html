@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>HTML</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet" href="barAuto.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
@@ -20,10 +20,12 @@
       luego divide la cuenta entre los comensales
     </p>
 
-
+<div class="menu">
   <h2>Menú</h2>
+
   <br>
-  <div>
+  
+  <div class="cervezas">
   <h3>Cervezas</h3>
   <div class="card" style="width: 18rem">
     <img
@@ -38,13 +40,16 @@
         y acompasados: apenas algo de lúpulo, un poco de cereal, ésteres y
         levadura.
       </p>
-      <a href="#" id="btn-cerveza" class="btn btn-primary">Agregar a mi pedido</a>
+      <button href="#" id="btn-cerveza" class="btn btn-primary">Agregar a mi pedido</button>
     </div>
   </div>
-    <br>
-    <h3>Tragos</h3>
-<div>
   </div>
+
+    <br>
+
+  <div class="tragos"></div>
+    <h3>Tragos</h3>
+
   <div class="card" style="width: 18rem">
     <img
       src="https://www.clarin.com/img/2019/04/11/aun-hay-distintas-versiones-sobre___CmdFSZZQK_720x0__1.jpg"
@@ -60,13 +65,17 @@
         de no alterar las propiedades de las hierbas esenciales para una
         bebida que sólo es igual a sí misma.
       </p>
-      <a href="#" class="btn btn-primary">Agregar a mi pedido</a>
+      <button href="#" id="btn-fernet" class="btn btn-primary">Agregar a mi pedido</button>
     </div>
   </div>
+  </div>
+
     <br>
+
+    <div class="comida">
     <h3>Comida</h3>
 
-  </div>
+ 
   <div>
   <div class="card" style="width: 18rem">
     <img
@@ -79,12 +88,16 @@
       <p class="card-text">
         Las clásicas, con todo el ketchup que quieras ponerle.
       </p>
-      <a href="#" class="btn btn-primary">Agregar a mi pedido</a>
+      <button href="#" id="btn-papas" class="btn btn-primary">Agregar a mi pedido</button>
     </div>
   </div>
-</div>
-  </div>
 
+</div>
+</div>
+
+<br>
+
+  <button href="#" id="btn-confirmar" class="btn btn-primary">Confirmar mi pedido</button>
 
   <table class="table">
     <thead class="thead-dark">
