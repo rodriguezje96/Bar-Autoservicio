@@ -14,76 +14,95 @@
   </head>
 
   <body>
-    <h1>Primera Preentrega</h1>
+    <h1>Desafío Complementario: Interactuar con HTML</h1>
     <p>
       Una aplicación que permite realizar el pedido desde la mesa del bar y
       luego divide la cuenta entre los comensales
     </p>
 
-    <!--agregar valor de cada cosa al menu-->
-    <h2>Menú</h2>
-    <br>
-    <div>
-    <h3>Cervezas</h3>
-    <div class="card" style="width: 18rem">
-      <img
-        src="https://salpimenta.com.ar/wp-content/uploads/2018/07/andes-origen.jpg"
-        class="card-img-top"
-        alt="Cerveza Andes Rubia"
-      />
-      <div class="card-body">
-        <h5 class="card-title">Cerveza Andes Rubia $300</h5>
-        <p class="card-text">
-          Esta Rubia de dorado brillante y cuerpo medio, brinda aromas variados
-          y acompasados: apenas algo de lúpulo, un poco de cereal, ésteres y
-          levadura.
-        </p>
-        <a href="#" class="btn btn-primary">Agregar a mi pedido</a>
-      </div>
-    </div>
-      <br>
-      <h3>Tragos</h3>
-<div>
-    </div>
-    <div class="card" style="width: 18rem">
-      <img
-        src="https://www.clarin.com/img/2019/04/11/aun-hay-distintas-versiones-sobre___CmdFSZZQK_720x0__1.jpg"
-        class="card-img-top"
-        alt="Fernet"
-      />
-      <div class="card-body">
-        <h5 class="card-title">Fernet $400</h5>
-        <p class="card-text">
-          Hierbas, frutos, raíces y cortezas de distintas partes del mundo, se
-          combinan dando vida a Fernet Branca. Dispuestas adecuadamente, esperan
-          el instante justo de ser molidas. Se trituran en los molinos, cuidando
-          de no alterar las propiedades de las hierbas esenciales para una
-          bebida que sólo es igual a sí misma.
-        </p>
-        <a href="#" class="btn btn-primary">Agregar a mi pedido</a>
-      </div>
-    </div>
-      <br>
-      <h3>Comida</h3>
 
-    </div>
-    <div>
-    <div class="card" style="width: 18rem">
-      <img
-        src="https://www.eltiempo.com/files/article_main/uploads/2021/04/15/6078c68c2f49b.jpeg"
-        class="card-img-top"
-        alt="Papas Fritas"
-      />
-      <div class="card-body">
-        <h5 class="card-title">Papas Fritas $350</h5>
-        <p class="card-text">
-          Las clásicas, con todo el ketchup que quieras ponerle.
-        </p>
-        <a href="#" class="btn btn-primary">Agregar a mi pedido</a>
-      </div>
+  <h2>Menú</h2>
+  <br>
+  <div>
+  <h3>Cervezas</h3>
+  <div class="card" style="width: 18rem">
+    <img
+      src="https://salpimenta.com.ar/wp-content/uploads/2018/07/andes-origen.jpg"
+      class="card-img-top"
+      alt="Cerveza Andes Rubia"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Cerveza Andes Rubia $300</h5>
+      <p class="card-text">
+        Esta Rubia de dorado brillante y cuerpo medio, brinda aromas variados
+        y acompasados: apenas algo de lúpulo, un poco de cereal, ésteres y
+        levadura.
+      </p>
+      <a href="#" id="btn-cerveza" class="btn btn-primary">Agregar a mi pedido</a>
     </div>
   </div>
+    <br>
+    <h3>Tragos</h3>
+<div>
+  </div>
+  <div class="card" style="width: 18rem">
+    <img
+      src="https://www.clarin.com/img/2019/04/11/aun-hay-distintas-versiones-sobre___CmdFSZZQK_720x0__1.jpg"
+      class="card-img-top"
+      alt="Fernet"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Fernet $400</h5>
+      <p class="card-text">
+        Hierbas, frutos, raíces y cortezas de distintas partes del mundo, se
+        combinan dando vida a Fernet Branca. Dispuestas adecuadamente, esperan
+        el instante justo de ser molidas. Se trituran en los molinos, cuidando
+        de no alterar las propiedades de las hierbas esenciales para una
+        bebida que sólo es igual a sí misma.
+      </p>
+      <a href="#" class="btn btn-primary">Agregar a mi pedido</a>
     </div>
+  </div>
+    <br>
+    <h3>Comida</h3>
+
+  </div>
+  <div>
+  <div class="card" style="width: 18rem">
+    <img
+      src="https://www.eltiempo.com/files/article_main/uploads/2021/04/15/6078c68c2f49b.jpeg"
+      class="card-img-top"
+      alt="Papas Fritas"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Papas Fritas $350</h5>
+      <p class="card-text">
+        Las clásicas, con todo el ketchup que quieras ponerle.
+      </p>
+      <a href="#" class="btn btn-primary">Agregar a mi pedido</a>
+    </div>
+  </div>
+</div>
+  </div>
+
+
+  <table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th>Nombre</th>
+            <th>Precio Unitario</th>
+        </tr>
+    </thead>
+    <tbody id="productos" class="table-striped">
+    </tbody>
+    <tfoot class="thead-dark">
+      <tr>
+        <th id="total">Total</th>
+        <th id="romana">Cada uno</th>
+      </tr>
+    </tfoot>
+</table>
+  
   </body>
   <script src="barAuto.js"></script>
 </html>

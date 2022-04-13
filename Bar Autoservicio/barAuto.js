@@ -10,7 +10,24 @@ function agregarProductoAlPedido(producto) {
     cuentaFinal += producto.costo;
 }
 
-while (pedido != "ESC") {
+let tabla = document.getElementById("productos");
+function agregarItemHTML(producto) {
+    let row = document.createElement("tr");
+    row.innerHTML = `<tr><th>${producto.name}</th><th>${producto.costo}</th></tr>`;
+    tabla.append(row);
+}
+
+function crearProducto() {
+    let nombre = `${producto.name}`;
+    let precio = `${producto.costo}`;
+    return new producto(nombre, precio);
+}
+
+//let boton = document.getElementById("btn-cerveza")
+    //  boton.onclick = () =>{agregarProductoAlPedido({ name: 'Cerveza', costo: 300 });
+
+
+while (pedido != "esc") {
     switch (pedido) {
         case "1":
             agregarProductoAlPedido({ name: 'Cerveza', costo: 300 });
@@ -31,5 +48,12 @@ while (pedido != "ESC") {
 }
 //Cuenta final por cada uno
 let cadaUno = cuentaFinal / clientes;
-alert("Total " + cuentaFinal);
-alert("Cada uno paga " + cadaUno);
+
+document.getElementById("total").innerText = `El total es ${cuentaFinal}`;
+
+document.getElementById("romana").innerText = `Cada uno paga ${cadaUno}`;
+
+pedidoFinal.forEach((producto) => {
+    agregarItemHTML(producto);
+});
+
