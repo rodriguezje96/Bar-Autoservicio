@@ -1,4 +1,3 @@
-
 const pedidoFinal = [];
 let cuentaFinal = 0;
 //let clientes = prompt("¿Cuántos van a comer?")
@@ -47,20 +46,16 @@ function crearProducto() {
 
 
 function confirmarPedido() {
-    pedidoFinal.forEach((producto) => {
-        agregarItemHTML(producto)
-        let comensales = JSON.parse(localStorage.getItem('clientesLS'));
-        let cadaUno = cuentaFinal / comensales;
 
-        document.getElementById("total").innerText = `El total es ${cuentaFinal}`;
-        document.getElementById("romana").innerText = `Cada uno paga ${cadaUno}`;
+    let comensales = JSON.parse(localStorage.getItem('clientesLS'));
+    let cadaUno = cuentaFinal / comensales;
 
-        localStorage.setItem('ticketProductos', JSON.stringify(pedidoFinal));
-        localStorage.setItem('ticketCF', JSON.stringify(cuentaFinal));
-        localStorage.setItem('ticketCU', JSON.stringify(cadaUno));
+    localStorage.setItem('ticketProductos', JSON.stringify(pedidoFinal));
+    localStorage.setItem('ticketCF', JSON.stringify(cuentaFinal));
+    localStorage.setItem('ticketCU', JSON.stringify(cadaUno));
 
-    });
 }
+
 botonConfirmar.onclick = confirmarPedido;
 
 productos.forEach((producto) => {
@@ -69,3 +64,4 @@ productos.forEach((producto) => {
         agregarProductoAlPedido(producto);
     };
 })
+

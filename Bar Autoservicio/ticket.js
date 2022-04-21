@@ -1,9 +1,9 @@
-const pedidoFinal = JSON.parse(localStorage.getItem('ticketProductos'));
-let cuentaFinal = JSON.parse(localStorage.getItem('ticketCF'));
+const ticketFinal = JSON.parse(localStorage.getItem('ticketProductos'));
+let cuentaFinalTicket = JSON.parse(localStorage.getItem('ticketCF'));
 let cadaUno = JSON.parse(localStorage.getItem('ticketCU'));
 let tabla = document.getElementById("productos");
 
-document.getElementById("total").innerText = `El total es ${cuentaFinal}`;
+document.getElementById("total").innerText = `El total es ${cuentaFinalTicket}`;
 document.getElementById("romana").innerText = `Cada uno paga ${cadaUno}`;
 
 function agregarItemHTML(producto) {
@@ -20,4 +20,10 @@ function crearProducto() {
 }
 
 
-pedidoFinal.forEach(producto => agregarItemHTML(producto));
+ticketFinal.forEach(producto => {
+    agregarItemHTML(producto)
+    document.getElementById("total").innerText = `El total es ${cuentaFinalTicket}`;
+    document.getElementById("romana").innerText = `Cada uno paga ${cadaUno}`;
+}
+);
+
