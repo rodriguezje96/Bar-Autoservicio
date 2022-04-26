@@ -24,7 +24,12 @@ botonClientes.onclick = confirmarClientes;
 
 function agregarProductoAlPedido(producto) {
 
-    alert(`Elegiste ${producto.name}. Costo ${producto.costo}.`)
+    Swal.fire({
+        title: 'Bien!',
+        text: `Elegiste ${producto.name}. Costo $${producto.costo}.`,
+        icon: 'success',
+        confirmButtonText: 'Aceptar'
+    })
     pedidoFinal.push(producto);
     cuentaFinal += producto.costo;
 }

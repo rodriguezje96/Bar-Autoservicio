@@ -2,6 +2,7 @@ const ticketFinal = JSON.parse(localStorage.getItem('ticketProductos'));
 let cuentaFinalTicket = JSON.parse(localStorage.getItem('ticketCF'));
 let cadaUno = JSON.parse(localStorage.getItem('ticketCU'));
 let tabla = document.getElementById("productos");
+let btnVaciar = document.getElementById("btn-vaciar");
 
 document.getElementById("total").innerText = `El total es $${cuentaFinalTicket}`;
 document.getElementById("romana").innerText = `Cada uno paga $${cadaUno}`;
@@ -26,4 +27,15 @@ ticketFinal.forEach(producto => {
     document.getElementById("romana").innerText = `Cada uno paga $${cadaUno}`;
 }
 );
+
+function vaciarCarrito () {
+    ticketFinal = [];
+    cuentaFinalTicket = 0;
+    cadaUno = 0;
+}
+
+btnVaciar.onclick = vaciarCarrito;
+console.log(ticketFinal);
+console.log(cuentaFinalTicket);
+console.log(cadaUno);
 
