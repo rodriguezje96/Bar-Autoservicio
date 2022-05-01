@@ -4,17 +4,18 @@ let cuentaFinal = 0;
 let tabla = document.getElementById("productos");
 let botonClientes = document.getElementById("btn-clientes");
 let botonConfirmar = document.getElementById("btn-confirmar")
-const productos = [
-    { name: 'Andes Rubia', costo: 300, id: 'btn-cerveza-rubia' },
-    { name: 'Andes IPA Roja', costo: 300, id: 'btn-cerveza-roja' },
-    { name: 'Andes IPA', costo: 300, id: 'btn-cerveza-ipa' },
-    { name: 'Fernet', costo: 400, id: 'btn-fernet' },
-    { name: 'Mojito', costo: 500, id: 'btn-mojito' },
-    { name: 'Daikiri', costo: 500, id: 'btn-daikiri' },
-    { name: 'Papas Fritas', costo: 350, id: 'btn-papas' },
-    { name: 'Pizza', costo: 700, id: 'btn-pizza' },
-    { name: 'Tequeños', costo: 400, id: 'btn-tequeño' }
-];
+const productos = [];
+
+function cargarProductos() {
+    fetch('productos.json')
+        .then(respuesta => respuesta.json())
+        .then(respuesta => {
+            muestraProductos(respuesta);
+            productos = respuesta;
+        })
+}
+
+cargarProductos();
 
 function confirmarClientes() {
     let clientes = document.getElementById("clientes").value;

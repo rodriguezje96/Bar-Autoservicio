@@ -28,14 +28,3 @@ ticketFinal.forEach(producto => {
 }
 );
 
-function vaciarCarrito () {
-    ticketFinal = [];
-    cuentaFinalTicket = 0;
-    cadaUno = 0;
-}
-
-btnVaciar.onclick = vaciarCarrito;
-console.log(ticketFinal);
-console.log(cuentaFinalTicket);
-console.log(cadaUno);
-
