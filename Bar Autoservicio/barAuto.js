@@ -6,16 +6,19 @@ let botonClientes = document.getElementById("btn-clientes");
 let botonConfirmar = document.getElementById("btn-confirmar")
 const productos = [];
 
-function cargarProductos() {
-    fetch('productos.json')
-        .then(respuesta => respuesta.json())
-        .then(respuesta => {
-            muestraProductos(respuesta);
-            productos = respuesta;
-        })
-}
+fetch('productos.json')
+.then( (resp) => resp.json() )
+.then( (data) => {
+   
+    data.forEach((producto) => {
+        let boton = document.getElementById(producto.id);
+        boton.onclick = () => {
+            agregarProductoAlPedido(producto);
+        };
+    })
+    })
 
-cargarProductos();
+
 
 function confirmarClientes() {
     let clientes = document.getElementById("clientes").value;
@@ -64,10 +67,5 @@ function confirmarPedido() {
 
 botonConfirmar.onclick = confirmarPedido;
 
-productos.forEach((producto) => {
-    let boton = document.getElementById(producto.id);
-    boton.onclick = () => {
-        agregarProductoAlPedido(producto);
-    };
-})
+
 
