@@ -1,45 +1,82 @@
 [
-    {   "name": "Andes Rubia",
+{   "name": "Andes Rubia",
     "costo": 300, 
-    "id": "btn-cerveza-rubia"
+    "id": "btn-cerveza-rubia",
+    "tipo": "cerveza",
+    "imagen": "img/rubia.jfif",
+    "desc": "Rubia de dorado brillante y cuerpo medio"
+
 },
 
 {   "name": "Andes IPA Roja",
     "costo": 300,
-    "id": "btn-cerveza-roja"
+    "id": "btn-cerveza-roja",
+    "tipo": "cerveza",
+    "imagen": "img/ipa-roja.jpg",
+    "desc": "Rubia de dorado brillante y cuerpo medio"
+    
 },
 
 {   "name": "Andes IPA",
     "costo": 300,
-    "id": "btn-cerveza-ipa" 
+    "id": "btn-cerveza-ipa",
+    "tipo": "cerveza",
+    "imagen": "img/ipa.jpg",
+    "desc": "Rubia de dorado brillante y cuerpo medio"
+
 },
 {   "name": "Fernet",
     "costo": 400,
-    "id": "btn-fernet" 
+    "id": "btn-fernet",
+    "tipo": "trago",
+    "imagen": "img/fernet.jpg",
+    "desc": "Rubia de dorado brillante y cuerpo medio"
+
 },
 
 {   "name": "Mojito",
     "costo": 500,
-    "id": "btn-mojito" 
+    "id": "btn-mojito",
+    "tipo": "trago",
+    "imagen": "img/mojito.jpg",
+    "desc": "Rubia de dorado brillante y cuerpo medio"
+
 },
 
 {   "name": "Daikiri",
     "costo": 500,
-    "id": "btn-daikiri" 
+    "id": "btn-daikiri",
+    "tipo": "trago",
+    "imagen": "img/daikiri.jpg",
+    "desc": "Rubia de dorado brillante y cuerpo medio"
+
 },
 
 {   "name": "Papas Fritas",
     "costo": 350,
-    "id": "btn-papas" 
+    "id": "btn-papas",
+    "tipo": "comida",
+    "imagen": "img/papas.jpeg",
+    "desc": "Rubia de dorado brillante y cuerpo medio"
+
 },
 
 {   "name": "Pizza",
     "costo": 700,
-    "id": "btn-pizza" 
+    "id": "btn-pizza",
+    "tipo": "comida",
+    "imagen": "img/pizza.jpeg",
+    "desc": "Rubia de dorado brillante y cuerpo medio"
+
 },
 
 {   "name": "Tequeños",
     "costo": 400,
-    "id": "btn-tequeño"
+    "id": "btn-tequeño",
+    "tipo": "comida",
+    "imagen": "img/tequeño.jpg",
+    "desc": "Rubia de dorado brillante y cuerpo medio"
+
 }
+
 ]
