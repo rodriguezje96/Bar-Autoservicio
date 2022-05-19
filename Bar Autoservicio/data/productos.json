@@ -13,7 +13,7 @@
     "id": "btn-cerveza-roja",
     "tipo": "cerveza",
     "imagen": "img/ipa-roja.jpg",
-    "desc": "Rubia de dorado brillante y cuerpo medio"
+    "desc": "Lo mejor de la IPA Andina y la Roja. Sabroso amargor"
     
 },
 
@@ -22,7 +22,7 @@
     "id": "btn-cerveza-ipa",
     "tipo": "cerveza",
     "imagen": "img/ipa.jpg",
-    "desc": "Rubia de dorado brillante y cuerpo medio"
+    "desc": "De escuela inglesa. Amarga con su alto contenido de lúpulo"
 
 },
 {   "name": "Fernet",
@@ -30,7 +30,7 @@
     "id": "btn-fernet",
     "tipo": "trago",
     "imagen": "img/fernet.jpg",
-    "desc": "Rubia de dorado brillante y cuerpo medio"
+    "desc": "El de toda la vida. Se toma 70/30"
 
 },
 
@@ -39,7 +39,7 @@
     "id": "btn-mojito",
     "tipo": "trago",
     "imagen": "img/mojito.jpg",
-    "desc": "Rubia de dorado brillante y cuerpo medio"
+    "desc": "Este cóctel tan famoso a nivel mundial hace patria de Cuba"
 
 },
 
@@ -48,7 +48,7 @@
     "id": "btn-daikiri",
     "tipo": "trago",
     "imagen": "img/daikiri.jpg",
-    "desc": "Rubia de dorado brillante y cuerpo medio"
+    "desc": "La esencia sigue siendo la misma: ron y jugo de fruta"
 
 },
 
@@ -57,7 +57,7 @@
     "id": "btn-papas",
     "tipo": "comida",
     "imagen": "img/papas.jpeg",
-    "desc": "Rubia de dorado brillante y cuerpo medio"
+    "desc": "Las clásicas, con todo el ketchup que quieras ponerle."
 
 },
 
@@ -66,7 +66,7 @@
     "id": "btn-pizza",
     "tipo": "comida",
     "imagen": "img/pizza.jpeg",
-    "desc": "Rubia de dorado brillante y cuerpo medio"
+    "desc": "No hay hora para comer una buena pizza. Una pizza hecha con amor, nuestra pizza."
 
 },
 
@@ -75,7 +75,7 @@
     "id": "btn-tequeño",
     "tipo": "comida",
     "imagen": "img/tequeño.jpg",
-    "desc": "Rubia de dorado brillante y cuerpo medio"
+    "desc": "Una lanza de masa de pan con queso blanco relleno en el medio, una comida popular en Venezuela."
 
 }
 

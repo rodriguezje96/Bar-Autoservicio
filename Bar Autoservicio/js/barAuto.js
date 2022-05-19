@@ -4,9 +4,8 @@ let tabla = document.getElementById("productos");
 let botonClientes = document.getElementById("btn-clientes");
 let botonConfirmar = document.getElementById("btn-confirmar");
 let tarjeta = document.querySelector("card col-md");
-const productos = [];
 
-fetch('productos.json')
+fetch('data/productos.json')
     .then((resp) => resp.json())
     .then((data) => {
         const productosHTML = document.getElementById("productos")
@@ -54,7 +53,7 @@ botonClientes.onclick = confirmarClientes;
 
 function agregarProductoAlPedido(producto) {
     Swal.fire({
-        title: 'Bien!',
+        title: 'Listo!',
         text: `Elegiste ${producto.name}. Costo $${producto.costo}.`,
         icon: 'success',
         confirmButtonText: 'Aceptar'
